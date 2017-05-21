@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style type="text/css">
+.url_app {
+    margin: auto;
+    width: 800px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+}
+
+.output {
+    margin: 12px 0 0 60px;
+}
+
+p a {
+    color: #3e3838;
+    font-family: monospace;
+}
+
+.url_app .content{
+	text-align: center;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div ng-app="" class="url_app" ng-init="countries=['/US/en_US/','/GB/en_GB/','/FR/fr_FR/', '/DE/de_DE/', '/ES/es_ES/', '/DK/da_DK/', '/IT/it_IT/', '/NL/nl_NL/', '/SE/sv_SE/', '/PT/pt_PT/', '/RU/ru_RU/', '/TR/tr_TR/', '/AT/de_DE/', '/BE/fr_FR/', '/CH/de_DE/', '/IE/en_GB/', '/FI/en_GB/']">
+
+        <div class="content">
+            <p>Enter Url with www:
+                <input type="text" ng-model="url" placeholder="Enter ulr here">
+            </p>
+
+            <p>Enter Url With origin:
+                <input type="text" ng-model="url_origin" placeholder="Enter url here">
+            </p>
+
+            <p class="output" ng-repeat="country in countries" ng-show="url">
+                <a href="http://www.levi.com{{ country }}{{url}}" target="_blank">http://www.levi.com{{ country }}{{url}}</a>
+            </p>
+
+            <p class="output" ng-repeat="country in countries" ng-show="url_origin">
+                <a href="http://origin.levi-site.com{{ country }}{{url_origin}}" target="_blank">http://origin.levi-site.com{{ country }}{{url_origin}}</a>
+            </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
