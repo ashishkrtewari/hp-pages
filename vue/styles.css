@@ -5,7 +5,7 @@
 }
 .links {
     display: block;
-    padding: 5px;
+    padding: 5px 5px 5px 20px;
     border: solid 1px #ddd;
     margin: 5px;
     box-shadow: 2px 2px 5px -3px;
@@ -15,11 +15,12 @@
 }
 .clip-btn {
     width: 50px;
-    position: fixed;
+    position: absolute;
     right: 0;
+    top: 10px;
     opacity: 0;
     transition: 0.3s;
 }
-.view-list:hover .clip-btn {
+.app:hover .clip-btn {
     opacity: 1;
     }
