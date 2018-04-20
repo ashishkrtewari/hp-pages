@@ -1,0 +1,25 @@
+.app {
+    margin: 20px;
+    padding: 20px;
+
+}
+.links {
+    display: block;
+    padding: 5px;
+    border: solid 1px #ddd;
+    margin: 5px;
+    box-shadow: 2px 2px 5px -3px;
+}
+[v-cloak]{
+    display:none;
+}
+.clip-btn {
+    width: 50px;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.view-list:hover .clip-btn {
+    opacity: 1;
+    }
