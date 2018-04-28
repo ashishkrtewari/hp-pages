@@ -4,7 +4,7 @@ var app = new Vue({
        url: "",
        prefix: "",
        suffix: "",
-       isoCodes: ['/US/en_US/','/CA/en_CA/','/CA/fr_CA/','/GB/en_GB/','/FR/fr_FR/', '/DE/de_DE/', '/ES/es_ES/', '/DK/da_DK/', '/IT/it_IT/', '/NL/nl_NL/', '/SE/sv_SE/', '/PT/pt_PT/', '/RU/ru_RU/', '/TR/tr_TR/', '/AT/de_DE/', '/BE/fr_FR/', '/CH/de_DE/', '/IE/en/', '/FI/en/']
+       isoCodes: ['/US/en_US/','/CA/en_CA/','/CA/fr_CA/','/GB/en_GB/','/FR/fr_FR/', '/DE/de_DE/', '/ES/es_ES/', '/DK/da_DK/', '/IT/it_IT/', '/NL/nl_NL/', '/SE/sv_SE/', '/PT/pt_PT/', '/RU/ru_RU/', '/TR/tr_TR/', '/AT/de_AT/', '/BE/fr_BE/', '/CH/de_CH/', '/IE/en_IE/', '/FI/en/']
    },
    watch: {
        url: function(){
